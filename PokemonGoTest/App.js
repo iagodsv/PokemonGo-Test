@@ -1,20 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { Text, View, StyleSheet } from 'react-native';
+// or any pure javascript modules available in npm
+
+import Scan from './pages/Scan';
 
 export default function App() {
+
+  // const [pokemons, setPokemons] = useState([])
+
+  // useEffect(() => {
+  //   fetch('https://pokeapi.co/api/v2/pokemon', {
+  //     method: 'GET',
+  //     headers: {
+  //       'Content-type': 'application/json',
+  //       'Accept': 'application/json'
+  //     }
+  //   })
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       setPokemons(data.results)
+  //     })
+  // }, [])
+
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Scan />
+
+    </>
   );
 }
 
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+
+
 });
+
