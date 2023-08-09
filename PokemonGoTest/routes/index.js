@@ -22,7 +22,7 @@ export default function Routes() {
       headerTransparent='true'>
       <Stack.Navigator
         screenOptions={{ header: () => <></> }}
-        initialRouteName='Result'
+        initialRouteName='Home'
       >
         <Stack.Screen options={{ headerTransparent: 'true', title: '', headerShow: 'false' }} name='Home' component={Home} />
         <Stack.Screen name='Scan' component={Scan} />

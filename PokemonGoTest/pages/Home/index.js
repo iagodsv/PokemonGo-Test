@@ -1,9 +1,7 @@
-import { Text, View, StyleSheet, Button, ImageBackground } from 'react-native';
+import {View, StyleSheet, Button, ImageBackground } from 'react-native';
 
 // You can import from local files
 import Title from '../../components/Title';
-import Result from '../Result';
-import Scan from '../Scan';
 // or any pure javascript modules available in npm
 
 export default function Home({ navigation }) {
@@ -21,6 +19,7 @@ export default function Home({ navigation }) {
       >
         <Button       
         title='Scannear QRCODE'
+        onPress={() => navigation.navigate('Scan')}
           />
       </View>
 
