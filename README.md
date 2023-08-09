@@ -1,7 +1,7 @@
 
 <!-- Logo -->
 <p align="center">
-  <h1  align="center" alt="Pokemon Go Test" title="Pokemon Go Test">Pokemon Go Test</h1>
+  <h1  align="center" alt="Pokemon Go Test" title="Pokemon Go Test">PokemonGo Test</h1>
 </p>
 
 <!-- Badges -->
