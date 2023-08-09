@@ -82,7 +82,7 @@ Para executar o projeto é necessário ter instalado as seguintes ferramentas:
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/iagodsv/pokemongo-test
+$ git clone https://github.com/iagodsv/PokemonGo-Test.git
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd pokemongotest
 # Instale as dependências
