@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     color: 'red',
     textTransform: 'uppercase',
     fontWeight: 'bold',
-    backgroundColor: 'none',
     fontSize: 20,
     bottom: 250
 

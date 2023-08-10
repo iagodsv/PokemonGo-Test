@@ -1,36 +1,50 @@
 import React from 'react';
-import { StyleSheet, Button, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
 
 
 
-import Scan from '../../pages/Scan';
-import Result from '../../pages/Result';
-
-
-
-
-const Stack = createNativeStackNavigator();
-
-export default function ButtonScann({ navigation }) {
+export default function ButtonGoBack({ navigation }) {
   return (
-    <>
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name='Scan' component={Scan} />
-          <Stack.Screen name='Result' component={Result} />
-        </Stack.Navigator>
-      </NavigationContainer>
-
-      <Button
-        title='Scannear QRCODE'
-        onPress={() => navigation.navigate('Scan')}
+    <View
+      style={styles.goBack}>
+      <TouchableOpacity
+        title=' '
+        onPress={() => navigation.navigate('Home')}
+        style={styles.goBackButton}
       >
-        <Text> SCAN </Text>
-      </Button>
-    </>
+        <FontAwesome style={styles.icon} name="home" size={35} color="black" />
+      </TouchableOpacity>
+    </View>
+
+
   );
 }
 
 
+const styles = StyleSheet.create({
+
+
+  goBack: {
+    top: 150,
+    zIndex: 1
+  },
+
+  goBackButton: {
+
+    backgroundColor: 'white',
+    borderRadius: 5,
+    height: 40,
+    width: 40
+
+  },
+
+  icon: {
+    textAlign: 'center',
+
+  }
+
+
+
+
+});

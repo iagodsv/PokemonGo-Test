@@ -1,4 +1,4 @@
-import {View, StyleSheet, Button, ImageBackground } from 'react-native';
+import { View, StyleSheet, Button, ImageBackground } from 'react-native';
 
 // You can import from local files
 import Title from '../../components/Title';
@@ -8,22 +8,21 @@ export default function Home({ navigation }) {
   return (
     <>
       <ImageBackground
-    source={require('../../assets/pokemon-go-wallpaper.jpg')}
-    style = {styles.background}
-    >
-        <Title />
-        {/* <Scan /> */}
-        
-      <View 
-        style = {styles.buttonQR}
+        source={require('../../assets/pokemon-go-wallpaper.jpg')}
+        style={styles.background}
       >
-        <Button       
-        title='Scannear QRCODE'
-        onPress={() => navigation.navigate('Scan')}
-          />
-      </View>
+        <Title />
 
-     </ImageBackground>  
+        <View
+          style={styles.buttonQR}
+        >
+          <Button
+            title='Scannear QRCODE'
+            onPress={() => navigation.navigate('Scan')}
+          />
+        </View>
+
+      </ImageBackground>
 
     </>
   );
@@ -38,7 +37,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    
+
 
   },
 
@@ -51,9 +50,9 @@ const styles = StyleSheet.create({
 
   buttonQR: {
 
-      top: 250
+    top: 250
   }
-  
+
 
 });
 

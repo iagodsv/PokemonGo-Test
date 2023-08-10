@@ -1,17 +1,11 @@
 
 import { useEffect, useState } from 'react';
-import { Text, View, StyleSheet, Button, Image, ImageBackground } from 'react-native';
+import { Text, View, StyleSheet, Image, ImageBackground, Button } from 'react-native';
 import api from '../../utils/ApiUtils';
-
-// You can import from local files
-
+import ButtonGoBack from '../../components/Button';
 
 
-// or any pure javascript modules available in npm
-
-export default function Result({ route }) {
-
-
+export default function Result({ route, navigation }) {
 
   const id = route.params.id;
 
@@ -54,7 +48,13 @@ export default function Result({ route }) {
           <View>
             <Text style={styles.pokeType}> Type: {types} </Text>
           </View>
+
+            
         </View>
+
+        <ButtonGoBack
+              navigation={navigation}
+            />
 
       </ImageBackground>
 

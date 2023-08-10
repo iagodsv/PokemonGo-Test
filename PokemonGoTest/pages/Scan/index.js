@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
-// You can import from local files
-import Result from '../Result/index'
-// or any pure javascript modules available in npm
 
 export default function Scan({ navigation }) {
   const [hasPermission, setHasPermission] = useState(null);

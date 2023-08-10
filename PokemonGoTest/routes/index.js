@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text, View, StyleSheet, Button, TouchableOpacity, FlatList } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 
@@ -22,8 +21,7 @@ export default function Routes() {
       headerTransparent='true'>
       <Stack.Navigator
         screenOptions={{ header: () => <></> }}
-        initialRouteName='Home'
-      >
+        initialRouteName='Home'>
         <Stack.Screen options={{ headerTransparent: 'true', title: '', headerShow: 'false' }} name='Home' component={Home} />
         <Stack.Screen name='Scan' component={Scan} />
         <Stack.Screen name='Result' component={Result} />
